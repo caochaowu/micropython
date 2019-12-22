@@ -28,6 +28,7 @@
 #define  MICROPY_PY_BUILTINS_HELP_MODULES (1)
 #define  MICROPY_PY_BUILTINS_HELP         (1)
 //#define  MICROPY_PY_BTREE                 (1)
+//#define MICROPY_PY_FRAMEBUF				  (1)
 // By default use MicroPython version of readline
 #ifndef MICROPY_USE_READLINE
 #define MICROPY_USE_READLINE        (1)
