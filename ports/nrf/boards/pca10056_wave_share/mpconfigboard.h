@@ -44,7 +44,7 @@
 
 #define MICROPY_HW_LED1             (13) // LED1
 #define MICROPY_HW_LED2             (14) // LED2
-#define MICROPY_HW_LED3             (15) // LED3
+#define MICROPY_HW_LED3             (NRF_GPIO_PIN_MAP(1,9)) // LED3
 #define MICROPY_HW_LED4             (16) // LED4
 
 // UART config

@@ -364,7 +364,7 @@ endif
 sd: $(BUILD)/$(OUTPUT_FILENAME).hex
 	nrfjprog --eraseall -f $(MCU_VARIANT)
 	nrfjprog --program $(SOFTDEV_HEX) -f $(MCU_VARIANT)
-	nrfjprog --program $< --sectorerase -f $(MCU_VARIANT)
+	nrfjprog --program $< -f $(MCU_VARIANT)
 	nrfjprog --reset -f $(MCU_VARIANT)
 
 else ifeq ($(FLASHER), pyocd)

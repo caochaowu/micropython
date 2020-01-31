@@ -104,8 +104,8 @@ soft_reset:
 
     led_init();
 
-    led_state(1, 1); // MICROPY_HW_LED_1 aka MICROPY_HW_LED_RED
-
+    led_state(BOARD_LED1, 1); // MICROPY_HW_LED_1 aka MICROPY_HW_LED_RED
+    led_state(BOARD_LED2, 1); // to indify board is working.
     mp_stack_set_top(&_ram_end);
 
     // Stack limit should be less than real stack size, so we have a chance
